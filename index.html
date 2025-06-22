@@ -2,77 +2,78 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <title>حزب العراق للإصلاح</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Cairo', sans-serif;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1f/Iraq_flag_coat.png');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-        }
-        .overlay {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 2rem;
-            min-height: 100vh;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #000;
-        }
-        h2 {
-            animation: fadeIn 2s ease-in-out;
-        }
-        nav {
-            margin: 2rem 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-weight: bold;
-            background: #d32f2f;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-        }
-        iframe {
-            width: 90%;
-            height: 300px;
-            margin-top: 2rem;
-            border-radius: 16px;
-            border: none;
-        }
-        img {
-            width: 90%;
-            max-width: 400px;
-            margin-top: 2rem;
-            border: 2px solid #fff;
-            border-radius: 16px;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حزب العراق للإصلاح</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Cairo", sans-serif;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+    .overlay {
+      background-color: rgba(0,0,0,0.7);
+      min-height: 100vh;
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-top: 0;
+      text-shadow: 2px 2px 5px black;
+    }
+    .welcome {
+      font-size: 1.5em;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .buttons {
+      margin-top: 30px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 10px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 2px 2px 6px black;
+    }
+    iframe {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 720px;
+      height: 400px;
+      border: none;
+    }
+    img.gallery {
+      margin-top: 30px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <div class="overlay">
-        <h1>𓂀 حزب العراق للإصلاح 𓂀</h1>
-        <h2>مرحباً بكم في الموقع الرسمي لحزب العراق للإصلاح</h2>
-        <nav>
-            <a href="#">المكتبة</a>
-            <a href="#">الاتصال بنا</a>
-            <a href="#">المساعدة</a>
-            <a href="#">حول الحزب</a>
-        </nav>
-        <iframe src="https://www.youtube.com/embed/UEEP_bARdtI" allowfullscreen></iframe>
-        <img src="https://chat.openai.com/_next/image?url=https%3A%2F%2Ffiles.oaiusercontent.com%2Ffile-PhHey1jdC2CQqQ7ZX3BS3a%2Fimage.png&w=3840&q=75" alt="شعار الحزب">
+  <div class="overlay">
+    <h1>𓆩 حزب العراق للإصلاح 𓆪</h1>
+    <div class="welcome">✦ أهلاً بكم في الموقع الرسمي ✦</div>
+    <div class="buttons">
+      <a href="#">📚 المكتبة</a>
+      <a href="#">📞 اتصل بنا</a>
+      <a href="#">❓ المساعدة</a>
+      <a href="#">ℹ️ حول الحزب</a>
     </div>
+    <iframe src="https://www.youtube.com/embed/UEEP_bARdtI" allowfullscreen></iframe>
+    <img src="IMG-20250620-WA0005.jpg" alt="صورة للحزب" class="gallery">
+  </div>
 </body>
 </html>
