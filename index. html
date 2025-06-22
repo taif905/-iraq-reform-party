@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حزب العراق للإصلاح</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-image: url('https://raw.githubusercontent.com/taif905/iraq-reform-party/main/logo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+    header {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      font-weight: bold;
+      color: #FFD700;
+      text-shadow: 2px 2px 4px #000;
+    }
+    .welcome {
+      font-size: 1.5em;
+      animation: fadeIn 3s ease-in-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 10px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    section {
+      padding: 30px;
+      background: rgba(0,0,0,0.7);
+      margin: 20px;
+      border-radius: 15px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border: none;
+    }
+    img {
+      max-width: 90%;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>𓂀 حزب العراق للإصلاح 𓂀</h1>
+    <div class="welcome">مرحباً بكم في الموقع الرسمي لحزب العراق للإصلاح</div>
+    <nav>
+      <button onclick="scrollToSection('about')">حول الحزب</button>
+      <button onclick="scrollToSection('help')">المساعدة</button>
+      <button onclick="scrollToSection('contact')">الاتصال</button>
+      <button onclick="scrollToSection('library')">المكتبة</button>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>حول الحزب</h2>
+    <p>
+      حزب العراق للإصلاح هو كيان سياسي مسجل رسمياً يهدف إلى تمثيل إرادة الشعب والمطالبة بالإصلاحات الشاملة في جميع مفاصل الدولة.
+    </p>
+  </section>
+
+  <section id="library">
+    <h2>المكتبة</h2>
+    <img src="https://raw.githubusercontent.com/taif905/iraq-reform-party/main/IMG-20250620-WA0002.jpg" alt="صورة 1">
+    <img src="https://raw.githubusercontent.com/taif905/iraq-reform-party/main/IMG-20250620-WA0003.jpg" alt="صورة 2">
+    <img src="https://raw.githubusercontent.com/taif905/iraq-reform-party/main/IMG-20250620-WA0005.jpg" alt="صورة 3">
+  </section>
+
+  <section id="video">
+    <h2>فيديو تعريفي</h2>
+    <iframe src="https://www.youtube.com/embed/UEEP_bARdtI" allowfullscreen></iframe>
+  </section>
+
+  <section id="help">
+    <h2>المساعدة</h2>
+    <p>لأي استفسار حول الموقع أو محتواه يمكنك التواصل عبر قسم الاتصال بنا.</p>
+  </section>
+
+  <section id="contact">
+    <h2>الاتصال بنا</h2>
+    <p>يمكنكم مراسلتنا على البريد الإلكتروني: taiftt006@gmail.com</p>
+    <p>أو الاتصال بنا عبر الرقم: <a href="tel:+9647710468666">+964 771 046 8666</a></p>
+    <p><a href="https://www.facebook.com/share/19WpJL1N8a/" target="_blank">صفحتنا على فيسبوك</a></p>
+  </section>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
