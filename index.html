@@ -1,30 +1,78 @@
 
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>حزب العراق للإصلاح | Iraq Party for Reform</title>
-    <link rel="stylesheet" href="style.css">
+    <title>حزب العراق للإصلاح</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1f/Iraq_flag_coat.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+        }
+        h2 {
+            animation: fadeIn 2s ease-in-out;
+        }
+        nav {
+            margin: 2rem 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            background: #d32f2f;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+        iframe {
+            width: 90%;
+            height: 300px;
+            margin-top: 2rem;
+            border-radius: 16px;
+            border: none;
+        }
+        img {
+            width: 90%;
+            max-width: 400px;
+            margin-top: 2rem;
+            border: 2px solid #fff;
+            border-radius: 16px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-<header>
-    <h1>حزب العراق للإصلاح<br><small>Iraq Party for Reform</small></h1>
-</header>
-<nav>
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html">من نحن</a>
-    <a href="contact.html">اتصل بنا</a>
-</nav>
-<main>
-    <h2>مرحبًا بكم في الموقع الرسمي لحزب العراق للإصلاح</h2>
-    <p>نسعى نحو بناء وطن ينهض بالإصلاح، ويستند إلى قيم العدالة والكرامة والمواطنة. رؤيتنا عراق مزدهر يليق بتضحيات شعبه العظيم.</p>
-</main>
-<div class="social-buttons">
-    <a href="https://wa.me/9647710468666" target="_blank">واتساب</a>
-    <a href="https://www.facebook.com/share/19WpJL1N8a/" class="facebook" target="_blank">فيسبوك</a>
-</div>
-<footer>
-    &copy; 2025 حزب العراق للإصلاح - جميع الحقوق محفوظة
-</footer>
+    <div class="overlay">
+        <h1>𓂀 حزب العراق للإصلاح 𓂀</h1>
+        <h2>مرحباً بكم في الموقع الرسمي لحزب العراق للإصلاح</h2>
+        <nav>
+            <a href="#">المكتبة</a>
+            <a href="#">الاتصال بنا</a>
+            <a href="#">المساعدة</a>
+            <a href="#">حول الحزب</a>
+        </nav>
+        <iframe src="https://www.youtube.com/embed/UEEP_bARdtI" allowfullscreen></iframe>
+        <img src="https://chat.openai.com/_next/image?url=https%3A%2F%2Ffiles.oaiusercontent.com%2Ffile-PhHey1jdC2CQqQ7ZX3BS3a%2Fimage.png&w=3840&q=75" alt="شعار الحزب">
+    </div>
 </body>
 </html>
